@@ -1,0 +1,231 @@
+:host {
+    width: 100%;
+}
+
+.sicredi-button {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #3FA110;
+    border: 1px solid transparent;
+    display: inline-flex;
+    padding: 0 16px;
+    position: relative;
+    min-height: 56px;
+    background: transparent;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.sicredi-button p.label{
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+.sicredi-button :disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.sicredi-button > .icon.-before {
+    margin-right: 8px;
+}
+
+.sicredi-button > .icon.-after {
+    margin-left: 8px;
+}
+
+.sicredi-button.-block {
+    width: 100%;
+}
+
+.sicredi-button.-block > .icon {
+    margin: 0;
+    position: absolute;
+}
+
+.sicredi-button.-block > .icon.-after {
+    right: 8px;
+}
+
+.sicredi-button.-block > .icon.-before {
+    left: 8px;
+}
+
+.sicredi-button-primary {
+    border-color: #3FA110;
+    box-shadow: 0 4px 4px 0 rgba(50, 60, 50, 0.2);
+}
+
+.sicredi-button-primary.ghost {
+      color: #3FA110;
+      background: transparent;
+}
+
+.sicredi-button-primary.ghost:hover:not(:disabled),
+.sicredi-button-primary.ghost:focus:not(:disabled) {
+    background: #f2f2f2;
+    border-color: #2d730b;
+}
+
+.sicredi-button-primary.ghost:hover:not(:disabled):active,
+.sicredi-button-primary.ghost:focus:not(:disabled):active {
+    background: #ececec;
+    border-color: #1b4407;
+}
+
+.sicredi-button-primary:not(.ghost) {
+    color: #FFFFFF;
+    background: #3FA110;
+    border-color: #3FA110;
+}
+
+.sicredi-button-primary:not(.ghost):hover:not(:disabled),
+.sicredi-button-primary:not(.ghost):focus:not(:disabled) {
+    color: #FFFFFF;
+    background: #2d730b;
+    border-color: #2d730b;
+}
+
+.sicredi-button-primary:not(.ghost):hover:not(:disabled):active,
+.sicredi-button-primary:not(.ghost):focus:not(:disabled):active {
+    background: #1b4407;
+    border-color: #1b4407;
+}
+
+.sicredi-button-secondary {
+    border-color: #3FA110;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px 0 rgba(50, 60, 50, 0.2);
+}
+
+.sicredi-button-secondary.ghost {
+    color: #3FA110;
+    background: transparent;
+}
+
+.sicredi-button-secondary.ghost:hover:not(:disabled),
+.sicredi-button-secondary.ghost:focus:not(:disabled) {
+    background: #f2f2f2;
+    border-color: #2d730b;
+}
+
+.sicredi-button-secondary.ghost:hover:not(:disabled):active,
+.sicredi-button-secondary.ghost:focus:not(:disabled):active {
+    background: #ececec;
+    border-color: #1b4407;
+}
+
+.sicredi-button-secondary:not(.ghost) {
+      color:#3FA110;
+      background: #FFFFFF;
+      border-color: #3FA110;
+}
+
+.sicredi-button-secondary:not(.ghost):hover:not(:disabled),
+.sicredi-button-secondary:not(.ghost):focus:not(:disabled) {
+    color: #FFFFFF;
+    background: #2d730b;
+    border-color: #2d730b;
+}
+
+.sicredi-button-secondary:not(.ghost):hover:not(:disabled):active,
+.sicredi-button-secondary:not(.ghost):focus:not(:disabled):active {
+    background: #1b4407;
+    border-color: #1b4407;
+}
+ 
+.sicredi-button.-danger {
+    border-color: #E60000;
+    box-shadow: 0 4px 4px 0 rgba(50, 60, 50, 0.2);
+}
+
+.sicredi-button.-danger.ghost {
+    color: #E60000;
+    background: transparent;
+}
+
+.sicredi-button.-danger.ghost :hover:not(:disabled),
+.sicredi-button.-danger.ghost :focus:not(:disabled) {
+    background: #f2f2f2;
+    border-color: #b30000;
+}
+
+.sicredi-button.-danger.ghost :hover:not(:disabled):active,
+.sicredi-button.-danger.ghost :focus:not(:disabled):active {
+    background: #ececec;
+    border-color: #800000;
+}
+ 
+.sicredi-button.-danger:not(.ghost) {
+    color: #FFFFFF;
+    background: #E60000;
+}
+
+.sicredi-button.-danger:not(.ghost) :hover:not(:disabled),
+.sicredi-button.-danger:not(.ghost) :focus:not(:disabled) {
+    color: #FFFFFF;
+    background: #b30000;
+    border-color: #b30000;
+}
+
+.sicredi-button.-danger:not(.ghost) :hover:not(:disabled):active,
+.sicredi-button.-danger:not(.ghost) :focus:not(:disabled):active {
+    background: #800000;
+    border-color: #800000;
+}
+
+/* loader dots **/
+
+@keyframes loading-dots-animation{
+    0%{transform:scale(1, 1) translateY(0)}
+    10%{transform:scale(1.1, 0.9) translateY(0)}
+    30%{transform:scale(0.9, 1.1) translateY(-6px)}
+    50%{transform:scale(1, 1) translateY(0)}
+    57%{transform:translateY(-2px)}100%{transform:translateY(0)}
+}
+
+.sicredi-button:disabled .content-message {
+    visibility: hidden;
+}
+
+.sicredi-button:disabled .loading-dots {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.sicredi-button:disabled .loading-dots div{
+    background: white;
+    margin-right: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    -webkit-animation-name: loading-dots-animation;
+    animation-name: loading-dots-animation;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
+
+.sicredi-button:disabled .loading-dots div:nth-child(2){
+    animation-delay: .3s;
+}
+
+.sicredi-button:disabled .loading-dots div:nth-child(3){
+    animation-delay: .6s;
+    margin-right: 0;
+}

@@ -1,0 +1,54 @@
+/**
+* Insere a fonte Exo 2
+*/
+
+@font-face {
+    font-family: 'Exo 2', sans-serif;
+    src: url('./../fonts/exo2/Light.woff2') format('woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Exo 2', sans-serif;
+    src: url('./../fonts/exo2/Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Exo 2', sans-serif;
+    src: url('./../fonts/exo2/Medium.woff2') format('woff2');
+    font-weight: 500;
+}
+
+/**
+* Insere a fonte Nunito
+*/
+
+@font-face {
+    font-family: 'Nunito', sans-serif;
+    src: url('./../fonts/nunito/Light.woff') format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Nunito', sans-serif;
+    src: url('./../fonts/nunito/Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Nunito', sans-serif;
+    src: url('./../fonts/nunito/SemiBold.woff') format('woff');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Nunito', sans-serif;
+    src: url('./../fonts/nunito/Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+* {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+}

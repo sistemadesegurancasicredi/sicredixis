@@ -1,0 +1,4 @@
+function closeToast(name) {
+    const el = document.getElementsByName(name)[0];
+    el.classList.remove("open");
+}

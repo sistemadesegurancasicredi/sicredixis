@@ -1,0 +1,63 @@
+.toast-sicredi-list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+}
+
+.toast-sicredi button {
+    background: url("../img/close.svg");
+    width: 16px;
+    height: 16px;
+    border: none;
+}
+
+.toast-sicredi {
+    background: #323c32;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: opacity .25s,transform .25s,padding .25s,font-size .25s;
+    transform: translateY(-100%);
+    opacity: 0;
+    font-size: 0;
+    padding: 0;
+}
+
+@keyframes example {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+        font-size: 0;
+        padding: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        padding: 24px;
+        font-size: 16px;
+    }
+}
+
+.toast-sicredi.open {
+    transform: translateY(0);
+    opacity: 1;
+    padding: 24px;
+    font-size: 16px;
+    animation: example .25s;
+}
+
+.toast-sicredi.danger {
+    background: #AB4745;
+}
+
+.toast-sicredi.success {
+    background: #3fa110;
+}
